@@ -1,0 +1,123 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Monk's Cafe | Come Dine With Us</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i,800|Roboto:400,500,500i,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<!--HEADER-->
+	<header>
+		<a href="" class="home">
+			<div class="logoContainer">
+				<div class="logo"><img src="img/logo.png"></div>
+				<div class="title">
+					<h1>Monk's Cafe</h1>
+					<p>"The Coffee Shop"</p>
+				</div>
+			</div>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Menu</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+				<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--END HEADER-->
+	
+
+	<!--HERO BANNER WITH LOGO-->
+	<div class="hero">
+	</div>
+	<!--END HERO BANNER WITH LOGO-->
+
+	<!--RESERVATIONS SECTION-->
+	<div class="reservationSection">
+		<h2>Reservations</h2>
+		<!--MAKE RESERVATION FORM-->
+		<div class="reservationContainer">
+			<h3>Make a Reservation</h3>
+			<div class="alert"></div>
+			<form class="reservation-form">
+				<div class="formFields">
+				  <label for="name"></label>
+				  <input class="reservation-name" type="text" placeholder="Name" name="name">
+				</div>
+			  	<div class="formFields">
+				  <label for="day"></label>
+				  <input class="reservation-day" type="text" placeholder="Day" name="day">
+				</div>
+			  	<input type="submit" value="Confirm">
+			</form>
+		</div>
+		<!--END MAKE RESERVATION FORM-->
+
+		<!--EXISTING RESERVATIONS TABLE-->
+		<div class="reservationContainer">
+			<h3>Existing Reservations</h3>
+			<div class="reservationInfo">
+				<ul class="reservations">
+				</ul>
+			</div>
+		</div>
+		<!--END EXISTING RESERVATIONS TABLE-->
+	</div>
+	<!--END RESERVATIONS SECTION-->
+
+	<!--COME DINE WITH US SECTION-->
+	<div class="dineWithUs">
+		<h2>Come Dine with Us</h2>
+		<div class="map" id="map"></div>
+	</div>
+	<!--END COME DINE WITH US SECTION-->
+
+	<!--CUSTOMER REVIEWS-->
+	<div class="reviews">
+		<h2>Reviews</h2>
+		<div class="reviewContainer">
+			<img src="img/jerryReview.jpg" alt="Jerry's Review">
+		</div>
+		<div class="reviewContainer">
+			<h3>Customer Reviews</h3>
+			<blockquote>&#34;Big lettuce, big carrots, tomatoes like volleyballs.&#34;</blockquote>
+			<p>–Jerry Seinfeld, on The BIG Salad</p>
+		</div>
+	</div>
+	<!--CUSTOMER REVIEWS-->
+
+  	<!--FOOTER-->
+  	<footer>
+  		<p>Monk's Cafe.</p>
+  	</footer>
+  	<!--FOOTER-->
+
+  	<script id="reservation-template" type="text/x-handlebars-template">
+		<li data-id="{{reservationId}}">
+			<span>{{name}}</span>
+			<span>{{day}}</span>
+			<div class="editRemove">
+				<a href="#" class="remove">Cancel</a>
+			</div>
+		</li>
+  	</script>
+
+
+  	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+	<!-- handlebars -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+	<!-- Main js file -->
+	<script src="js/main.js"></script>
+	<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ0Zbj1489eTpQshh3F9mDCmAAlM922SI&callback=initMap"></script>
+</body>
+
+</html>

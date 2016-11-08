@@ -1,0 +1,356 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----BASE STYLES----*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #fff;
+	color: #787776;
+
+}
+a { 
+	text-decoration: none;
+	color: #787776;
+}
+a:hover {
+	color: #000;
+}
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+table{
+	width: 100%
+}
+
+/*----HEADER STYLES----*/
+header {
+	padding: 1rem;
+	color: #787776;
+
+}
+.home {
+	color: #787776;
+	text-decoration: none;
+}
+.logoContainer {
+	width: 50%;
+	display: inline-block;
+}
+.logo {
+	
+	display: inline-block;
+	vertical-align: top;
+}
+.title { 
+	display: inline-block; 
+	margin-top: 20px;
+}
+.title p {
+	font-size: 1.5rem;
+	line-height: 3rem;
+	font-style: italic;
+}
+nav{
+	width: 49%;
+	display: inline-block;
+	text-align: right;
+	text-transform: uppercase;
+}
+nav ul li {
+	font-size: 1.2rem;
+	display: inline-block;
+	margin:0 10px;
+}
+
+.hero {
+	width: 100%;
+	height: 500px;
+	background-image: url('../img/toms-restaurant-revised.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+/*----RESERVATIONS STYLES----*/
+.reservationSection {
+	text-align: center;
+	padding: 2.5rem 1rem;
+}
+.reservationContainer{
+	width: 480px;
+	height: 270px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #787776;
+	margin: 4rem 2rem;
+	padding: 2rem;
+
+}
+
+.reservations {
+	width: 100%;
+}
+.reservationInfo {
+	margin: 2rem 0;
+	text-align: left;
+	height: 200px;
+	overflow-x: auto;
+    overflow-y: scroll;
+    border: 1px solid #dcdadb;
+}
+.reservationInfo span{
+	display: inline-block;
+	margin-right: 1rem;
+
+}
+.reservationInfo li{
+	padding: 1rem;
+	border-bottom: 1px dotted #dcdadb;
+}
+.editRemove {
+	text-align: right;
+	float: right;
+}
+
+form {
+	text-align: right;
+	margin: 2rem 0;
+}
+.formFields {
+	display: block;
+	margin-bottom: 2rem;
+}
+
+input[type=text] {
+   width: 100%;
+   padding:10px;
+   box-sizing: border-box;
+   border: 1px solid #dcdadb;
+   font-size: 1rem;
+}
+input[type=text]:focus {
+	outline: none;
+	border:1px solid #000;
+}
+input[type=submit] {
+	width: 100%;
+	cursor: pointer;
+	border:none;
+	background: #787776;
+	color: #fff;
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 1rem 0;
+}
+input[type=submit]:hover {
+	background: #000;
+	outline: none;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: rgb(201, 235, 235);
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+
+.error { 
+	color: #C00;
+	padding: .5rem;
+}
+/*----COME DINE WITH US STYLES----*/
+
+.dineWithUs{
+	background: #efefef;
+	text-align: center;
+	padding: 2.5rem 1rem;
+}
+.map {
+	border: 1px solid #787776;
+	width: 80%;
+	margin: 4rem auto;
+	height: 350px;
+}
+/*----REVIEWS STYLES----*/
+.reviews {
+	text-align: center;
+	padding: 2.5rem 1rem;
+}
+.reviewContainer{
+	width: 480px;
+	display: inline-block;
+	border: 1px solid #dcdadb;
+	vertical-align: top;
+	margin: 3rem 2rem;
+	padding: 2rem;
+}
+.reviewContainer:last-child{
+	border: 0;
+	text-align: left;
+}
+.reviewContainer img  {
+	width: 100%;
+}
+.reviewContainer p{
+	font-size: 1.5rem;
+}
+blockquote{
+	padding: 3rem 0;
+    font-size: 2.5rem;
+    font-style: italic;
+    line-height: 3rem;
+}
+
+/*--FOOTER STYLES--*/
+footer {
+	background: #787776;
+	width: 100%;
+	padding: 2rem 0; 
+	text-align: center;
+	color: #fff;
+}
+
+/*--RESPONSIVE--*/
+
+@media only screen and (max-width : 462px) {
+
+	.logoContainer {
+	    width: 100%;
+	    display: block;
+	    text-align: center;
+	}
+    nav { 
+		display: block; 
+		width: 100%;
+		text-align: center;
+		margin: 1rem;
+
+	}
+	.hero { 
+		height: 200px 
+	}
+	.reservationContainer{
+	width: 80%;
+	height: 270px;
+	margin: 2rem auto;
+	}
+	.reservationContainer table td{
+	padding: .5rem;
+	}
+	.reviewContainer {
+		width: 80%;
+		display: block;
+		margin: 2rem auto;
+	}
+	
+}
+@media only screen and  (min-width: 463px) and (max-width : 762px) {
+
+	.logoContainer {
+	    width: 100%;
+	    display: block;
+	    text-align: center;
+	}
+    nav { 
+		display: block; 
+		width: 100%;
+		text-align: center;
+		margin: 1rem;
+
+	}
+	.hero { 
+		height: 300px 
+	}
+	
+	.reservations{
+		margin: 0;
+	}
+	.reservationContainer{
+	width: 80%;
+	height: 270px;
+	margin: 2rem auto;
+
+	}
+	.reviewContainer {
+		width: 80%;
+		display: block;
+		margin: 2rem auto;
+	}
+
+}
+
+@media only screen and (min-width: 763px) and (max-width : 830px) {
+
+	h1 {
+		font-size: 2rem;
+	}
+	.hero { 
+		height: 400px 
+	}
+	.reservationContainer {
+		display: block;
+	margin: 2rem auto;
+	}
+	.reviewContainer {
+		display: block;
+		margin: 2rem auto;
+	}
+}
+
+
