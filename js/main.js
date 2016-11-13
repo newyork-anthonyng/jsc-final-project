@@ -66,8 +66,13 @@ getReservations();
 $('.reservations').on('click','.remove', function (e) {
     e.preventDefault();
    var id = $(e.target).parent().parent().data('id');
-   var commentReference = database.ref('reservations/' + id)
-  commentReference.remove();
+  // var commentReference = database.ref('reservations/' + id)
+  //commentReference.remove();
+
+		// We are still referencing the same database ref. We need to use the child method
+		// to target the data we want to delete
+	  var reservationInfo = database.ref('reservations');
+		reservationInfo.child(id).remove();
 });
 
 
